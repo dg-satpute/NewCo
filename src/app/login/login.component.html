@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="alert " *ngIf='invalidLogin'>{{errorMessage}}</div>
+
+  
+
+
+  <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+
+   
+
+    <input type="text" placeholder="Mobile Number" ngModel name="Mobile_number">
+
+
+    <input type="password" placeholder="Password" [(ngModel)] ="password" [ngModelOptions]="{standalone: true}">
+     
+    <button type="submit" class="btn btn-primary">Login</button>
+
+    <p class="Forget">Forget password<a routerLink="/forget">click here</a></p>
+    <p class="Forget">Creat Account<a routerLink="/signup">click here</a></p>
+
+
+  </form>
+  
+
+</div>

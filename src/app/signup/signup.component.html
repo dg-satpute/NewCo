@@ -1,0 +1,37 @@
+<div class="container">
+<div class="alert-success " *ngIf='success'><h3>{{message}}</h3></div>
+    <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+    <div class="row">
+        <div class="col">
+            <input type="text" placeholder=" First Name" ngModel  name="First Name">
+
+            <input type="text" placeholder=" Last Name"  ngModel name="Last Name">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col">
+            <input type="number" placeholder="Enter Mobile No" ngModel name="Mobile Number">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" placeholder="Enter State" ngModel name="State">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" placeholder="Password" ngModel name ="Password">
+
+        </div>
+    </div>
+    <div class="row1">
+        <div class="col1" style="margin-left: 60%; margin-top: 50px;">
+            <button class="btn btn-primary"  type="submit" >signup</button> 
+        </div>
+    </div>
+</form>
+</div>

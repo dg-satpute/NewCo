@@ -1,0 +1,25 @@
+
+
+<div class="container bg-light">
+<div>product ID : <input type="text"  [(ngModel)]="pid"></div>
+<div> Name : <input type="text"  [(ngModel)]="pname"></div>
+<div> Price: <input type="text" [(ngModel)]="price"></div>
+<div>Category:  <select class="form-select" aria-label="Default select example"> 
+    <option value="Electronics">Electronics</option>
+    <option value="Agriculture">Agriculture</option>
+    <option value="Fashion">Books</option>
+    <option value="Fashion">Fashion</option>
+    <option value="Furniture">Furniture</option>
+    <option value="construction">Construction Material</option>
+     </select>
+<input type="file" (change)="onFileSelected($event)";>
+    
+
+  
+
+
+
+<div><button (click)=onUpload() class="btn-success  ">ADD</button></div>
+
+</div>
+
