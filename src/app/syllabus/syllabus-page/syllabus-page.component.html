@@ -1,31 +1,24 @@
-<figure id="video_player">
-    <video controls width="600px">
-        <source src="assets\vid\Bali_8K_HDR.mp4" >
-    </video>
 
-<figcaption>
-    <ul>
-        <li><a href="assets\vid\Bali_8K_HDR.mp4">video 1</a></li>
-        <li><a href="assets\vid\Bulgaria_8K_HDR_60P_(FUHD).mp4">video 2</a></li>
-    </ul>
-</figcaption>
-</figure>
-<script type="text/javascript">
-var video_player=document.getElementById("video_player"),
-links=video_player.getElementsByTagName('a');
-for(var i=0;i<links.length;i++){
-    links[i].onclick=handler;
-} 
-function handler(e){
-    e.preventDefault();
-    videotarget=this.getAttribute("href");
-    filename=videotarget.substr(0,videotarget.lastIndexOf('.'))||videotarget;
-    video=document.querySelector("#video_player video");
-    video.removeAttribute('poster');
-    source=document.querySelectorAll("#video_player video source");
-    source[0].src=filename+mp4;
-    source[1].src=filename+mp4;
-    video.load();
-    video.play();
-}
-</script>
+<div class="row">
+  <div class="col-sm-12">
+<video   style="width: 900px;" autoplay controls controlsList="nodownload"  [src]="source"></video>
+
+
+<div class="playlist">
+
+ <div class="topic">
+
+<button  (click)="play('Gulabi Ankhe')" >
+  Gulabi Ankhe
+</button>
+</div>
+
+
+<div class="topic">
+<button  (click)="play('Mere mehboob')" >
+  Mere mehboob
+</button>
+</div>
+</div>
+</div>
+</div>

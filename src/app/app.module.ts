@@ -15,8 +15,12 @@ import{FormsModule,ReactiveFormsModule}from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { ForgetComponent } from './forget/forget.component';
 import { SubjectPageComponent } from './subject/subject-page/subject-page.component';
-import { SyllabusPageComponent } from './syllabus/syllabus-page/syllabus-page.component'
-
+import { SyllabusPageComponent } from './syllabus/syllabus-page/syllabus-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import { ClassService } from './class.service';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -32,6 +36,7 @@ import { SyllabusPageComponent } from './syllabus/syllabus-page/syllabus-page.co
     ForgetComponent,
     SubjectPageComponent,
     SyllabusPageComponent,
+    FooterComponent,
     
 
     
@@ -42,9 +47,13 @@ import { SyllabusPageComponent } from './syllabus/syllabus-page/syllabus-page.co
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatIconModule,
+    
   ],
-  providers: [],
+  providers: [ClassService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

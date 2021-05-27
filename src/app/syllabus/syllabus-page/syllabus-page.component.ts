@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./syllabus-page.component.css']
 })
 export class SyllabusPageComponent implements OnInit {
- 
+  
+   source=''
+   
   constructor() { }
 
   ngOnInit(): void {
+   
   }
+play(song:string){
+  if(song=='Gulabi Ankhe')
+ { this.source='assets/video/Gulabi_Aankhen__Sanam.mp4'}
+  if(song=='Mere mehboob'){
+  this.source='https://d3s2ast1ppti4l.cloudfront.net/Vectors+and+scalars+questions+(practice)+-+Khan+Academy.MKV'
+  }
+}
+  
 
+  
+  
 }

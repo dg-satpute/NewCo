@@ -1,12 +1,12 @@
 body {
-    background-color: orange;
+    background-color: rgb(36, 26, 7);
   }
   .container{
      display: flex;
      flex-wrap: wrap;
       flex-direction: row;
       column-gap: 40px;
-      background: rgb(250, 2, 238);
+      background: 		#696969;
       
     border: 2px solid  darkolivegreen;
     margin-top: 15px
@@ -20,5 +20,8 @@ body {
       transform: translateY(100px);
   }
   h3{
+      color: aliceblue;
+      font-size: 30px;
+      font-weight: bolder;
       text-align: center;
   }

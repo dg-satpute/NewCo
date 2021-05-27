@@ -4,30 +4,40 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
+.alert{
+    z-index: 1000;
+}
 
 body{
     overflow: hidden;
 }
 
 .container{
+    z-index: 500;
     display: flex;
     flex-direction: column;
     grid-column: auto;
     min-height: 100vh;
     margin-top: 70px;
     font-size:x-large;
-    margin-left: 30%;
+   
     
 }
 
+form{
+   justify-content: center;
+   align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
  
  .btn{
      margin-top: 30px;
      margin-left: 30%;
      font-size: x-large;
-     height: 50px;
-     width: 150px;
+     height: 40px;
+     width: 120px;
      background-color: rgb(14, 109, 218);
      border-radius: 10px;
     

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ClassService } from '../class.service';
 
 
 
@@ -12,14 +12,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./productlist.component.css']
 })
 export class ProductlistComponent implements OnInit {
-   price='111'
-   product1='laptop'
-  constructor() { }
+  
+   className=["First class","second class","third class","Fourth class","First class","second class","third class","Fourth class"];
 
+
+  constructor(public _ClassService:ClassService) {
+   }
+   Value:string=""
   ngOnInit(): void {
+   
+   
+
+    this.Value=  this._ClassService.getname()
    
   }
 
-
+ 
 
 }
