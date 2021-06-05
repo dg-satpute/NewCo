@@ -20,6 +20,10 @@ play(song:string){
   if(song=='Mere mehboob'){
   this.source='https://d3s2ast1ppti4l.cloudfront.net/Vectors+and+scalars+questions+(practice)+-+Khan+Academy.MKV'
   }
+
+  if(song=='costa'){
+    this.source='C://Users/LC/Desktop/download/COSTA_RICA_IN_4K_60fps_HDR_(ULTRA_HD).mp4'
+  }
 }
   
 

@@ -1,4 +1,60 @@
+* {
+    box-sizing: border-box;
+  }
+.wrapper{
+margin-left: auto;
+margin-right: auto;
+
+width: 100%;
+
+
+}
+.videoplayer{
+   
+   
+    height: auto;
+    width: 100%;
+}
+
 .playlist{
-    display: flex;
-    flex-direction: column;
+   
+    height: 500px;
+   overflow-y: scroll;
+    
+    
+  background-color: #d9e2eb;;
+   
+    border: gray 1px solid;
+  
+}
+.content{
+    
+    width: 340px;
+    font-family:fantasy;
+    background-color: rgb(221, 219, 216);
+    text-align: center;
+    font-size: 30px;
+    padding-top: 9px;
+    height: 50px;
+}
+
+.topic{
+
+    margin-top: 2px;
+    width: 340px;
+    font-size:x-large;
+     border: rgb(110, 103, 94) 1px solid;
+}
+
+.btn{
+    font-family: fantasy;
+    font-weight: inherit;
+        width: 340px;
+    border: hidden;
+}
+.description{
+    border: 2px gray solid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
