@@ -6,18 +6,24 @@ body {
      flex-wrap: wrap;
       flex-direction: row;
       column-gap: 40px;
-      background: 		#696969;
+      background: rgb(12, 19, 31);
       
     border: 2px solid  darkolivegreen;
     margin-top: 15px
   }
   .container .item{
-      border: 1px solid darkolivegreen;
+      border: 1px solid rgb(12, 19, 31);
+     
 
+  }
+  .item img{
+      box-shadow: rgb(109, 211, 15);
+      
+      width:fit-content;
   }
   
   .container .item:hover{
-      transform: translateY(100px);
+      transform: translateY(30px);
   }
   h3{
       color: aliceblue;

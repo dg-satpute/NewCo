@@ -5,21 +5,14 @@
 
     <nav class="navbar navbar-expand     navbar-dark bg-dark">
         <div class="navbar-brand " style="color: chartreuse; height: 50px;" > NEP-OTT</div>
-       
-
-
-
         
-          
-          
-
         <ul class="navbar-nav">
             <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/welcome/gan" class="nav-link">Home</a></li>
-            <li><a  routerLink="/product" class="nav-link"> <strong>Home</strong> </a></li>
+            <li><a  routerLink="/product" class="nav-link"> <strong><i class="	fa fa-home" ></i> </strong> </a></li>
         </ul>
 
         <ul class="navbar-nav navbar-collapse justify-content-end">
-                <li><a *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link"><legend>login</legend></a></li>
+                <li><a *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link"><i class="	fa fa-user" ></i> </a></li>
                 <li><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/logout" class="nav-link"><legend>Logout</legend></a></li>
         </ul>
         

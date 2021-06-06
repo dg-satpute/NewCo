@@ -2,6 +2,8 @@
     box-sizing: border-box;
   }
 .wrapper{
+    margin-top: 6px;
+    
 margin-left: auto;
 margin-right: auto;
 
@@ -17,10 +19,11 @@ width: 100%;
 }
 
 .playlist{
+  
    
     height: 500px;
    overflow-y: scroll;
-    
+    scroll-behavior: smooth;
     
   background-color: #d9e2eb;;
    
@@ -32,7 +35,7 @@ width: 100%;
     width: 340px;
     font-family:fantasy;
     background-color: rgb(221, 219, 216);
-    text-align: center;
+    
     font-size: 30px;
     padding-top: 9px;
     height: 50px;
@@ -43,18 +46,28 @@ width: 100%;
     margin-top: 2px;
     width: 340px;
     font-size:x-large;
-     border: rgb(110, 103, 94) 1px solid;
+    
 }
 
 .btn{
-    font-family: fantasy;
+    background-color:rgb(193, 206, 211);
+    color: black;
+    text-align: left;
+    font-size: x-large;
+    font-family:'Courier New', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: inherit;
         width: 340px;
-    border: hidden;
+    border-radius: 10px;
+    
 }
+
 .description{
     border: 2px gray solid;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+ .btn i{
+    font-size: 30px;
+    color: lime;
 }
