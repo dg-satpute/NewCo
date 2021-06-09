@@ -8,10 +8,10 @@
 
    
 
-    <input type="text" placeholder="Mobile Number" ngModel name="Mobile_number">
+    <input type="number" placeholder="Mobile Number"  [(ngModel)] ="Mobile_number"  [ngModelOptions]="{standalone: true}">
 
 
-    <input type="password" placeholder="Password" [(ngModel)] ="password" [ngModelOptions]="{standalone: true}">
+    <input type="password" placeholder="Password" [(ngModel)]  ="password"   [ngModelOptions]="{standalone: true}">
      
     <button type="submit" class="btn btn-primary">Login</button>
 

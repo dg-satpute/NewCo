@@ -45,7 +45,7 @@ width: 100%;
 
     margin-top: 2px;
     width: 340px;
-    font-size:x-large;
+    
     
 }
 
@@ -68,6 +68,6 @@ width: 100%;
     width: 100%;
 }
  .btn i{
-    font-size: 30px;
-    color: lime;
+    font-size: 40px;
+    color: rgb(13, 23, 114);
 }

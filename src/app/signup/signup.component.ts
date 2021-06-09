@@ -1,11 +1,11 @@
-import { Component, OnInit, ɵresetJitOptions } from '@angular/core';
+import { Component, OnInit,  } from '@angular/core';
 import { Router } from '@angular/router';
 import {HttpClient, HttpHeaders, JsonpClientBackend} from '@angular/common/http';
 
 
 import{Form}from '@angular/forms'
-import { analyzeAndValidateNgModules } from '@angular/compiler';
-import { from } from 'rxjs';
+
+
 
 
 @Component({

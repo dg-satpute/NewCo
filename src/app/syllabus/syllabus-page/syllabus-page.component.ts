@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SyllabusPageComponent implements OnInit {
   
-   source=''
+   source='assets/video/Mere_Mehboob_Qayamat_Hogi__Sanam.mp4'
    
   constructor() { }
 
@@ -29,8 +29,7 @@ play(song:string){
   }
 
   if(song=='costa'){
-    this.source='C://Users/LC/Desktop/download/COSTA_RICA_IN_4K_60fps_HDR_(ULTRA_HD).mp4'
-  }
+    this.source='assets/video/Mere_Mehboob_Qayamat_Hogi__Sanam.mp4'  }
 }
   
 
